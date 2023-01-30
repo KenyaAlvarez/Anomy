@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anomy", "Anomy\Anomy.csproj", "{BF555259-C9BE-4D60-A0B7-0998F901FE8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anomy", "Anomy\Anomy.csproj", "{FA6983AB-80CA-40A3-B677-A3396ECF5ABF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BF555259-C9BE-4D60-A0B7-0998F901FE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF555259-C9BE-4D60-A0B7-0998F901FE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF555259-C9BE-4D60-A0B7-0998F901FE8D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{BF555259-C9BE-4D60-A0B7-0998F901FE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF555259-C9BE-4D60-A0B7-0998F901FE8D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF555259-C9BE-4D60-A0B7-0998F901FE8D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FA6983AB-80CA-40A3-B677-A3396ECF5ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6983AB-80CA-40A3-B677-A3396ECF5ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6983AB-80CA-40A3-B677-A3396ECF5ABF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FA6983AB-80CA-40A3-B677-A3396ECF5ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6983AB-80CA-40A3-B677-A3396ECF5ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6983AB-80CA-40A3-B677-A3396ECF5ABF}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
