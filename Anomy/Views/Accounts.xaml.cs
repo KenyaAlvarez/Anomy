@@ -1,11 +1,9 @@
-﻿namespace Anomy.Views
+namespace Anomy.Views;
+
+public partial class Accounts : ContentPage
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Accounts : ContentPage
-    {
-        public Accounts()
-        {
-            InitializeComponent();
-        }
-    }
+	public Accounts()
+	{
+		InitializeComponent();
+	}
 }
