@@ -9,6 +9,6 @@ namespace Anomy.models
     public class AccountsModel
     {
         public string SocialMedia { get; set; }
-        ImageSource ImageSource { get; set; }
+        public string imagesource { get; set; }
     }
 }

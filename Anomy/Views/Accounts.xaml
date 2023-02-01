@@ -3,15 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Anomy.Views.Accounts"
              Title="Accounts" BackgroundColor="#F4F4F4">
-    <VerticalStackLayout>
-        <Grid RowDefinitions="auto,*">
-            <Label
+
+    <Grid RowDefinitions="auto,*">
+        <Label
                 Padding="20"
                 TextColor="Black"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 HorizontalTextAlignment="Center"
                 Text="Cuentas"/>
-        </Grid>
-    </VerticalStackLayout>
+        <CollectionView ItemsSource="{Binding Accountslist}"
+                            VerticalOptions="Center"
+                            Margin="20,80,20,0">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                                 Span="1"
+                                 VerticalItemSpacing="20"/>
+            </CollectionView.ItemsLayout>
+            
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame CornerRadius="32"
+                           BackgroundColor="#F4F4F4">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="{Binding imagesource}"
+                                   HeightRequest="100"/>
+
+                        <Label Text="{Binding SocialMedia}"
+                                   VerticalOptions="Center"
+                                   TextColor="Black"
+                                   FontSize="Medium"/>
+
+                    </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
 </ContentPage>
