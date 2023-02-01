@@ -4,7 +4,7 @@
              x:Class="Anomy.Views.Accounts"
              Title="Accounts" BackgroundColor="#F4F4F4">
 
-    <Grid RowDefinitions="auto,*">
+    <Grid>
         <Label
                 Padding="20"
                 TextColor="Black"
@@ -20,24 +20,34 @@
                                  Span="1"
                                  VerticalItemSpacing="20"/>
             </CollectionView.ItemsLayout>
-            
+
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Frame CornerRadius="32"
                            BackgroundColor="#F4F4F4">
-                    <StackLayout Orientation="Horizontal">
-                        <Image Source="{Binding imagesource}"
-                                   HeightRequest="100"/>
-
-                        <Label Text="{Binding SocialMedia}"
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding SocialMedia}"
                                    VerticalOptions="Center"
+                                   HorizontalTextAlignment="Center"
                                    TextColor="Black"
                                    FontSize="Medium"/>
 
-                    </StackLayout>
+                            <Image Source="{Binding imagesource}"
+                                   HeightRequest="50"
+                                   VerticalOptions="End"/>
+                        </StackLayout>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+        <Button
+    WidthRequest="80"
+    HeightRequest="80"
+    CornerRadius="40"
+    VerticalOptions="End"
+    HorizontalOptions="EndAndExpand"
+    Text="+"
+    TextColor="White"
+    BackgroundColor="#150420"/>
     </Grid>
 </ContentPage>

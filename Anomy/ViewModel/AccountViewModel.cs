@@ -51,7 +51,7 @@ namespace Anomy.ViewModel
                 new AccountsModel
                 {
                     SocialMedia = "Instagram",
-                    imagesource = "inatagram.png"
+                    imagesource = "instagram.png"
                 },
                 new AccountsModel
                 {
