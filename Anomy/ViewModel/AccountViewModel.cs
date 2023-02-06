@@ -1,4 +1,5 @@
 ﻿using Anomy.models;
+using Anomy.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -30,9 +31,9 @@ namespace Anomy.ViewModel
         }
         #endregion
         #region Procesos
-        public async Task Volver()
+        public async Task addCommand()
         {
-            await Navigation.PopAsync();
+            await Navigation.PushAsync(new PasswordPage());
         }
         public void accounts()
         {
@@ -63,11 +64,26 @@ namespace Anomy.ViewModel
                     SocialMedia = "Amazon",
                     imagesource = "amazon.png"
                 },
+                 new AccountsModel
+                {
+                    SocialMedia = "BVVA",
+                    imagesource = "bvva.png"
+                },
+                    new AccountsModel
+                {
+                    SocialMedia = "Discord",
+                    imagesource = "discord.png"
+                },
+                    new AccountsModel
+                {
+                    SocialMedia = "App store",
+                    imagesource = "appstore.png"
+                },
             };
         }
         #endregion
         #region Comandos
-        public ICommand ProcesoAsynccommand => new Command(async () => await Volver());
+        public ICommand addcommand => new Command(async () => await addCommand());
         //public ICommand ProcesoSimplecommand => new Command(accounts);
         #endregion 
     }

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Anomy.Views.InfoPage"
+             Title="Info" BackgroundColor="#F4F4F4">
+    <VerticalStackLayout  Padding="20,50,20,0">
+        <Border WidthRequest="100"
+                HeightRequest="100"
+                Stroke="transparent"
+                StrokeThickness="4"
+                Padding="15"
+                BackgroundColor="White"
+                StrokeShape="RoundRectangle 60">
+
+            <Image Source="facebook.png"
+               HeightRequest="80"
+               WidthRequest="80"/>
+        </Border>
+        <Label Text="Facebook"
+               VerticalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Padding="25"
+               FontAttributes="Bold"
+               TextColor="Black"
+               FontSize="Medium"/>
+        <Entry 
+              Placeholder="hola@orthocana.com" 
+              Text="hola@orthocana.com"
+              PlaceholderColor="#bababa" 
+              FontSize="16" 
+              Margin="15,15,15,15"
+              Keyboard="Email"
+              BackgroundColor="#EDEDED"/>
+
+        <Entry 
+            Margin="15,15,15,15"
+            Placeholder="Contrasena" 
+            Text="usuario123456."
+            PlaceholderColor="#bababa" 
+            FontSize="16" 
+            Keyboard="Email"
+            BackgroundColor="#EDEDED"/>
+        
+        <Button        Text="Copiar" 
+                       TextColor="White" 
+                       BackgroundColor="#150420" 
+                       FontSize="15"
+                       Margin="15,15,15,15"
+                       HeightRequest="50" 
+                       CornerRadius="20"/>
+
+    </VerticalStackLayout>
+</ContentPage>
