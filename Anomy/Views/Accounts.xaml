@@ -3,17 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Anomy.Views.Accounts"
              Title="Cuentas" BackgroundColor="#F4F4F4">
-    
+
     <ContentPage.Content>
-    <Grid>
-        <!--<Label
+        <Grid RowDefinitions="*">
+            <VerticalStackLayout VerticalOptions="FillAndExpand">
+        <ListView ItemsSource="{Binding Accountslist}"
+                      VerticalOptions="Center"
+                      Margin="20,0"
+                      SelectionMode="None"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <NeoFrame CornerRadius="30"
+                                  Elevation=".1"
+                                  BackgroundColor="#F4F4F4">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding SocialMedia}"
+                                   VerticalOptions="Center"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="Black"
+                                   Padding="25"
+                                   FontSize="Medium"/>
+                                </StackLayout>
+                            </NeoFrame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            </VerticalStackLayout>
+            <!--<Label
                 Padding="20"
                 TextColor="Black"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 HorizontalTextAlignment="Center"
                 Text="Cuentas"/>-->
-        <CollectionView ItemsSource="{Binding Accountslist}"
+
+            
+        
+        <!--<CollectionView ItemsSource="{Binding Accountslist}"
                             VerticalOptions="Center"
                             Margin="20,0">
             <CollectionView.ItemsLayout>
@@ -24,8 +54,8 @@
 
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                        <NeoFrame CornerRadius="20,10,10,10"
-                                  Elevation=".25"
+                        <NeoFrame CornerRadius="30"
+                                  Elevation=".1"
                                   BackgroundColor="#F4F4F4">
                         <StackLayout Orientation="Horizontal">
                             <Label Text="{Binding SocialMedia}"
@@ -43,8 +73,8 @@
                     </NeoFrame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
-        </CollectionView>
-        <Button WidthRequest="70"
+        </CollectionView>-->
+            <Button WidthRequest="70"
                 HeightRequest="70"
                 CornerRadius="40"
                 VerticalOptions="End"
@@ -56,6 +86,6 @@
                 TextColor="White"
                 BackgroundColor="#46086F"
                 Command="{Binding addcommand}"/>
-    </Grid>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

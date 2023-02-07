@@ -16,6 +16,7 @@
                HeightRequest="80"
                WidthRequest="80"/>
         </Border>
+        
         <Label Text="Facebook"
                VerticalOptions="Center"
                HorizontalTextAlignment="Center"

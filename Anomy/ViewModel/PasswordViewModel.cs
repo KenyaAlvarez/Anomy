@@ -27,9 +27,9 @@ namespace Anomy.ViewModel
         }
         #endregion
         #region Procesos
-        public async Task nextpage()
+        public async Task returnpage()
         {
-            await Navigation.PushAsync(new InfoPage());
+            await Navigation.PushAsync(new Accounts());
         }
         //public void accounts()
         //{
@@ -37,7 +37,7 @@ namespace Anomy.ViewModel
         //}
         #endregion
         #region Comandos
-        public ICommand nextpagecommand => new Command(async () => await nextpage());
+        public ICommand returnpagecommand => new Command(async () => await returnpage());
         //public ICommand ProcesoSimplecommand => new Command(accounts);
         #endregion 
     }
