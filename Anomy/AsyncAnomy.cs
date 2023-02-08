@@ -16,6 +16,10 @@ namespace Anomy
             instance = new Lazy<Task<T>>(() => Task.Run(factory));
         }
 
+        public AsyncAnomy(Func<Task<T>> factory)
+        {
+            instance = new Lazy<Task<T>>(() => Task.Run(factory));
+        }
         public TaskAwaiter<T> GetAwaiter ()
         {
             return instance.Value.GetAwaiter();

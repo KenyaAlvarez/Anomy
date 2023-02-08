@@ -8,7 +8,7 @@ namespace Anomy.Constants
 {
     public static class AnomyConstants
     {
-        public const string DataBaseFileName = "";
+        public const string DataBaseFileName = "AnomyDb";
 
         public const SQLite.SQLiteOpenFlags Flags = SQLite.SQLiteOpenFlags.ReadWrite |
             SQLite.SQLiteOpenFlags.Create |

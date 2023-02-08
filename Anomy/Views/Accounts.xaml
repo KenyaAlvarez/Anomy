@@ -7,27 +7,27 @@
     <ContentPage.Content>
         <Grid RowDefinitions="*">
             <VerticalStackLayout VerticalOptions="FillAndExpand">
-        <ListView ItemsSource="{Binding Accountslist}"
-                      VerticalOptions="Center"
-                      Margin="20,0"
-                      SelectionMode="None"
-                      HasUnevenRows="True"
-                      SeparatorVisibility="None">
+        <ListView x:Name="listview"
+                ItemsSource="{Binding Accountslist}"
+                VerticalOptions="Center"
+                Margin="20,0"
+                SelectionMode="None"
+                HasUnevenRows="True"
+                SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <NeoFrame CornerRadius="30"
                                   Elevation=".1"
                                   BackgroundColor="#F4F4F4">
-                                <StackLayout Orientation="Horizontal">
+
                                     <Label Text="{Binding SocialMedia}"
                                    VerticalOptions="Center"
                                    HorizontalTextAlignment="Center"
                                    TextColor="Black"
                                    Padding="25"
                                    FontSize="Medium"/>
-                                </StackLayout>
-                            </NeoFrame>
+                                </NeoFrame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
@@ -85,7 +85,7 @@
                 Padding="15,0,12,0"
                 TextColor="White"
                 BackgroundColor="#46086F"
-                Command="{Binding addcommand}"/>
+                Clicked="SaveClicked"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
