@@ -49,14 +49,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\amazon.png" />
-	  <None Remove="Resources\Images\appstore.png" />
-	  <None Remove="Resources\Images\bvva.png" />
-	  <None Remove="Resources\Images\discord.png" />
-	  <None Remove="Resources\Images\dropbox.png" />
-	  <None Remove="Resources\Images\facebook.png" />
-	  <None Remove="Resources\Images\github.png" />
-	  <None Remove="Resources\Images\instagram.png" />
+	  <None Remove="Resources\Images\appstore.svg" />
+	  <None Remove="Resources\Images\bvva.svg" />
+	  <None Remove="Resources\Images\discord.svg" />
+	  <None Remove="Resources\Images\dropbox.svg" />
+	  <None Remove="Resources\Images\facebook.svg" />
+	  <None Remove="Resources\Images\gbm.svg" />
+	  <None Remove="Resources\Images\github.svg" />
+	  <None Remove="Resources\Images\googleplay.svg" />
+	  <None Remove="Resources\Images\instagram.svg" />
+	  <None Remove="Resources\Images\mega.svg" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -1,9 +1,4 @@
 ﻿using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Anomy.models
 {
@@ -12,6 +7,8 @@ namespace Anomy.models
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public string SocialMedia { get; set; }
-        public string imagesource { get; set; }
+        public ImageSource imagesource { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }

@@ -1,7 +1,5 @@
-using Android.Service.Voice;
 using Anomy.Data;
 using Anomy.models;
-using Anomy.ViewModel;
 
 namespace Anomy.Views;
 
@@ -20,14 +18,23 @@ public partial class Accounts : ContentPage
 		listview.ItemsSource = await database.GetItemsAsync();
 	}
 	
-	async void SaveClicked(object sender, EventArgs e)
+	async void AddedClicked(object sender, EventArgs e)
     {
 		await Navigation.PushAsync(new PasswordPage
 		{
-			BindingContext= new AccountsModel()
+			BindingContext = new AccountsModel()
 		});
 	
 	 }
 
-	
+    async void ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+		if (e.SelectedItem!= null)
+		{
+			await Navigation.PushAsync(new InfoPage
+			{
+				BindingContext = e.SelectedItem as AccountsModel
+			});
+		}	
+    }
 }

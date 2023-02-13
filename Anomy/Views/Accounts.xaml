@@ -7,33 +7,37 @@
     <ContentPage.Content>
         <Grid RowDefinitions="*">
             <VerticalStackLayout VerticalOptions="FillAndExpand">
-        <ListView x:Name="listview"
-                ItemsSource="{Binding Accountslist}"
-                VerticalOptions="Center"
-                Margin="20,0"
-                SelectionMode="None"
-                HasUnevenRows="True"
-                SeparatorVisibility="None">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <NeoFrame CornerRadius="30"
+                        <ListView x:Name="listview"
+                      VerticalOptions="Center"
+                      Margin="20,0"
+                      HasUnevenRows="True"
+                      ItemSelected="ItemSelected"
+                      SelectionMode="Single"
+                      SeparatorVisibility="None">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                <NeoFrame CornerRadius="30"
                                   Elevation=".1"
                                   BackgroundColor="#F4F4F4">
-
-                                    <Label Text="{Binding SocialMedia}"
-                                   VerticalOptions="Center"
-                                   HorizontalTextAlignment="Center"
-                                   TextColor="Black"
-                                   Padding="25"
-                                   FontSize="Medium"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding SocialMedia}"
+                                           VerticalOptions="Center"
+                                           HorizontalTextAlignment="Center"
+                                           TextColor="Black"
+                                           Padding="25"
+                                           FontSize="Medium"/>
+                                        <Image Source="{Binding imagesource}"
+                                   HeightRequest="50"
+                                   VerticalOptions="End"/>
+                                 </StackLayout>
                                 </NeoFrame>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            </VerticalStackLayout>
-            <!--<Label
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </VerticalStackLayout>
+                    <!--<Label
                 Padding="20"
                 TextColor="Black"
                 FontAttributes="Bold"
@@ -85,7 +89,7 @@
                 Padding="15,0,12,0"
                 TextColor="White"
                 BackgroundColor="#46086F"
-                Clicked="SaveClicked"/>
+                Clicked="AddedClicked"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

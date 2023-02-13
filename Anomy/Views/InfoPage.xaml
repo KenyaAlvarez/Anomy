@@ -3,8 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Anomy.Views.InfoPage"
              Title="Info" BackgroundColor="#F4F4F4">
-    <VerticalStackLayout  Padding="20,50,20,0">
-        <Border WidthRequest="100"
+    <ContentPage.Content>
+        <Grid RowDefinitions="*">
+            <VerticalStackLayout  Padding="20,50,20,0">
+                <NeoFrame BackgroundColor="#F4F4F4"
+                          CornerRadius="30"
+                          Elevation=".1"
+                          HeightRequest="70">
+                    <Label Text="{Binding SocialMedia}"
+                       TextColor="Black"
+                       FontSize="Medium"
+                       HorizontalTextAlignment="Center"
+                       Padding="15"/>
+                </NeoFrame>
+                <NeoFrame BackgroundColor="#F4F4F4"
+                          CornerRadius="30"
+                          Elevation=".1"
+                          HeightRequest="70">
+                    <Label Text="{Binding Email}"
+                       TextColor="Black"
+                       FontSize="Medium"
+                       HorizontalTextAlignment="Center"
+                       Padding="15"/>
+                </NeoFrame>
+                <NeoFrame BackgroundColor="#F4F4F4"
+                          CornerRadius="30"
+                          Elevation=".1"
+                          HeightRequest="70">
+                    <Label Text="{Binding Password}"
+                       TextColor="Black"
+                       FontSize="Medium"
+                       HorizontalTextAlignment="Center"
+                       Padding="15"/>
+                </NeoFrame>
+                <!--<Border WidthRequest="100"
                 HeightRequest="100"
                 Stroke="transparent"
                 StrokeThickness="4"
@@ -12,43 +44,35 @@
                 BackgroundColor="White"
                 StrokeShape="RoundRectangle 60">
 
-            <Image Source="facebook.png"
+            <Image Source="{Binding imagesource}"
                HeightRequest="80"
                WidthRequest="80"/>
         </Border>
-        
-        <Label Text="Facebook"
+
+        <Label Text="{Binding SocialMedia}"
                VerticalOptions="Center"
                HorizontalTextAlignment="Center"
                Padding="25"
                FontAttributes="Bold"
                TextColor="Black"
                FontSize="Medium"/>
-        <Entry 
-              Placeholder="hola@orthocana.com" 
-              Text="hola@orthocana.com"
-              PlaceholderColor="#bababa" 
-              FontSize="16" 
-              Margin="15,15,15,15"
-              Keyboard="Email"
-              BackgroundColor="#EDEDED"/>
+        
+        <Label Text="{Binding Email}"
+               FontSize="16" 
+               BackgroundColor="#EDEDED"/>
 
-        <Entry 
-            Margin="15,15,15,15"
-            Placeholder="Contrasena" 
-            Text="usuario123456."
-            PlaceholderColor="#bababa" 
-            FontSize="16" 
-            Keyboard="Email"
-            BackgroundColor="#EDEDED"/>
+        <Label Text="{Binding Password}"
+               FontSize="16" 
+               BackgroundColor="#EDEDED"/>-->
         
         <Button        Text="Copiar" 
                        TextColor="White" 
                        BackgroundColor="#150420" 
                        FontSize="15"
-                       Margin="15,15,15,15"
+                       Margin="5,15,5,15"
                        HeightRequest="50" 
                        CornerRadius="20"/>
-
-    </VerticalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

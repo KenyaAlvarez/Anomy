@@ -13,8 +13,8 @@ namespace Anomy.Data
     {
         static SQLiteAsyncConnection Database;
 
-        public static readonly AsyncAnomy<AnomyDataBase> Instance =
-     new AsyncAnomy<AnomyDataBase>(async () =>
+        public static readonly AsyncLazy<AnomyDataBase> Instance =
+     new AsyncLazy<AnomyDataBase>(async () =>
      {
          var instance = new AnomyDataBase();
          try

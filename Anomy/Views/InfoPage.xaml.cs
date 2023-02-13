@@ -1,3 +1,5 @@
+using Anomy.Data;
+
 namespace Anomy.Views;
 
 public partial class InfoPage : ContentPage
@@ -6,4 +8,6 @@ public partial class InfoPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+  
 }
