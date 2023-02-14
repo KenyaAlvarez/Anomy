@@ -51,7 +51,9 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\appstore.svg" />
 	  <None Remove="Resources\Images\bvva.svg" />
+	  <None Remove="Resources\Images\cancel.png" />
 	  <None Remove="Resources\Images\discord.svg" />
+	  <None Remove="Resources\Images\dots.png" />
 	  <None Remove="Resources\Images\dropbox.svg" />
 	  <None Remove="Resources\Images\facebook.svg" />
 	  <None Remove="Resources\Images\gbm.svg" />
@@ -63,6 +65,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Plugin.Maui.Popup" Version="1.0.4" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 		<PackageReference Include="SQLiteNetExtensions.Async" Version="2.1.0" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.4" />
@@ -73,6 +76,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\Accounts.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\EditPopupPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\InfoPage.xaml">

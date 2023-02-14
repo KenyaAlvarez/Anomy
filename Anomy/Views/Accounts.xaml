@@ -18,8 +18,8 @@
                                 <DataTemplate>
                                     <ViewCell>
                                 <NeoFrame CornerRadius="30"
-                                  Elevation=".1"
-                                  BackgroundColor="#F4F4F4">
+                                           Elevation=".1"
+                                           BackgroundColor="#F4F4F4">
                                     <StackLayout Orientation="Horizontal">
                                         <Label Text="{Binding SocialMedia}"
                                            VerticalOptions="Center"
@@ -27,9 +27,13 @@
                                            TextColor="Black"
                                            Padding="25"
                                            FontSize="Medium"/>
-                                        <Image Source="{Binding imagesource}"
-                                   HeightRequest="50"
-                                   VerticalOptions="End"/>
+                                        <Label Text="{Binding Email}"
+                                               VerticalOptions="Center"
+                                               IsVisible="False"
+                                               HorizontalTextAlignment="Center"
+                                               TextColor="Black"
+                                               Padding="25"
+                                               FontSize="Medium"/>
                                  </StackLayout>
                                 </NeoFrame>
                                     </ViewCell>
