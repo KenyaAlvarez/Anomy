@@ -59,6 +59,8 @@
 	  <None Remove="Resources\Images\gbm.svg" />
 	  <None Remove="Resources\Images\github.svg" />
 	  <None Remove="Resources\Images\googleplay.svg" />
+	  <None Remove="Resources\Images\icondelet.svg" />
+	  <None Remove="Resources\Images\iconedit.svg" />
 	  <None Remove="Resources\Images\instagram.svg" />
 	  <None Remove="Resources\Images\mega.svg" />
 	</ItemGroup>

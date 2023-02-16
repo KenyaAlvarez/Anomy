@@ -16,11 +16,13 @@ public partial class EditPopupPage : BasePopupPage
         MauiPopup.PopupAction.ClosePopup();
     }
 
-    async void ReturnPage(object sender, EventArgs e)
+    private void TappedEdit(object sender, TappedEventArgs e)
     {
-        var AnomyItem = (AccountsModel)BindingContext;
-        AnomyDataBase database = await AnomyDataBase.Instance;
-        await database.SaveItemAsync(AnomyItem);
-        await Navigation.PopAsync();
+
+    }
+
+    private void TappedRemove(object sender, TappedEventArgs e)
+    {
+
     }
 }

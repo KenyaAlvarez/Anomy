@@ -15,4 +15,6 @@ public partial class InfoPage : ContentPage
     {
         PopupAction.DisplayPopup(new EditPopupPage());
     }
+
+    
 }

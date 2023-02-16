@@ -34,7 +34,10 @@
                                                TextColor="Black"
                                                Padding="25"
                                                FontSize="Medium"/>
-                                 </StackLayout>
+                                        <!--<Image Source="{Binding imagesource}"
+                                               HeightRequest="30"
+                                               VerticalOptions="End"/>-->
+                                    </StackLayout>
                                 </NeoFrame>
                                     </ViewCell>
                                 </DataTemplate>

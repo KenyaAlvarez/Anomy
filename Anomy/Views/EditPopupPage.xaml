@@ -8,72 +8,33 @@
              Title="Tu cuenta">
 
     <VerticalStackLayout Margin="20,20,20,0" Spacing="36">
-        <StackLayout Orientation="Horizontal">
-            <Label Text="Tu cuenta"
-                   HorizontalTextAlignment="Center"
-                   HorizontalOptions="StartAndExpand"
-                  FontSize="Large"
-                  FontAttributes="Bold"
-                  TextColor="#46086F"/>
-            
+        <StackLayout Orientation="Vertical">
             <ImageButton Source="cancel.png"
                          HeightRequest="35"
                          HorizontalOptions="End"
                          Clicked="CloseClickled"/>
-        </StackLayout>
-
-        <StackLayout  Orientation="Horizontal">
-            <Label Text="Cuenta:"
+            <Label Text="Editar"
+                   FontAttributes="Bold"
                    FontSize="Medium"
                    TextColor="#46086F"
-                   HorizontalTextAlignment="Start"/>
-            <Entry 
-                       Placeholder="Cuenta" 
-                       Text="{Binding SocialMedia}"
-                       PlaceholderColor="#bababa" 
-                       FontSize="Medium"
-                       HeightRequest="39"
-                       WidthRequest="200"
-                       BackgroundColor="#EDEDED"/>
-        </StackLayout>
-
-        <StackLayout Orientation="Horizontal">
-            <Label Text="Email:"
+                   Padding="10"
+                   HorizontalTextAlignment="Start">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TappedEdit"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="Eliminar"
+                   FontAttributes="Bold"
                    FontSize="Medium"
                    TextColor="#46086F"
-                   HorizontalTextAlignment="Start"/>
-            <Entry 
-                       Placeholder="Email" 
-                       Text="{Binding Email}"
-                       PlaceholderColor="#bababa" 
-                       FontSize="Medium" 
-                       WidthRequest="200"
-                       HeightRequest="39"
-                       BackgroundColor="#EDEDED"/>
-        </StackLayout>
+                   Padding="10"
+                   HorizontalTextAlignment="Start">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TappedRemove"/>
+                </Label.GestureRecognizers>
+          
 
-        <StackLayout  Orientation="Horizontal">
-            <Label Text="Contraseña:"
-                   FontSize="Medium"
-                   TextColor="#46086F"
-                   HorizontalTextAlignment="Start"/>
-            <Entry 
-                       Placeholder="Contraseña" 
-                       Text="{Binding Password}"
-                       PlaceholderColor="#bababa" 
-                       FontSize="Medium" 
-                       WidthRequest="200"
-                       IsPassword="True"
-                       HeightRequest="40"
-                       BackgroundColor="#EDEDED"/>
+          
         </StackLayout>
-        <Button        Text="Guardar" 
-                       TextColor="White" 
-                       BackgroundColor="#46086F" 
-                       FontSize="15"
-                       Margin="5,15,5,15"
-                       HeightRequest="50" 
-                       CornerRadius="20"
-                       Clicked="ReturnPage"/>
     </VerticalStackLayout>
 </mauiPopup:BasePopupPage>
