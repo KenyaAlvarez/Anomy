@@ -1,5 +1,8 @@
 ﻿using Maui.NeoControls;
-using Microsoft.Extensions.Logging;
+using Anomy.Services;
+using Anomy.Views;
+using Anomy.ViewModel;
+
 namespace Anomy;
 
 public static class MauiProgram
@@ -16,10 +19,16 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-#if DEBUG
-		builder.Logging.AddDebug();
-#endif
+		// Services
+		builder.Services.AddSingleton<IAccountsService, AccountService>();
 
-		return builder.Build();
+        // Views Registration
+        builder.Services.AddSingleton<AccountsPage>();
+		builder.Services.AddTransient<AddUpdateDetailAccount>();
+
+		// View Modles
+		builder.Services.AddSingleton<AccountsViewModel>();
+        builder.Services.AddTransient<AddUpdateViewModel>();
+        return builder.Build();
 	}
 }

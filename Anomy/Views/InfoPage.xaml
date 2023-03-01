@@ -27,14 +27,6 @@
                               Padding="2,0,2,0">
                         <StackLayout Padding="20,10,10,0">
                 
-                            <ImageButton Source="dots.png"
-                                         Clicked="EditClicked"
-                                         BackgroundColor="#F4F4F4"
-                                         Margin="305,4,10,15"
-                                         Padding="5"
-                                         HeightRequest="40"
-                                         WidthRequest="30"/>
-
                             <Label TextColor="Black"
                                    FontSize="Medium"
                                    HorizontalTextAlignment="Center"
@@ -124,26 +116,6 @@
                        HorizontalTextAlignment="Center"                               
                        Padding="15"/>
                     </NeoFrame>-->
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 
                 
                 

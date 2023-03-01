@@ -1,6 +1,6 @@
 ﻿using SQLite;
 
-namespace Anomy.models
+namespace Anomy.Models
 {
     public class AccountsModel
     {
@@ -10,5 +10,6 @@ namespace Anomy.models
         public string imagesource { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+
     }
 }
