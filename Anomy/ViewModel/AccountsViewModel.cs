@@ -41,7 +41,7 @@ namespace Anomy.ViewModel
         }
 
         [RelayCommand]
-        public async void AddAccount()
+        public async void AddUpdateAccount()
         {
             await AppShell.Current.GoToAsync(nameof(AddUpdateDetailAccount));
         }

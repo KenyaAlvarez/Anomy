@@ -10,6 +10,7 @@ namespace Anomy.Models
         public string imagesource { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-
+        [Ignore]
+        public string FullName => $"{SocialMedia} {Email}";
     }
 }

@@ -4,6 +4,14 @@
              x:Class="Anomy.Views.AddUpdateDetailAccount"
              Title="Nueva Contraseña" BackgroundColor="#F4F4F4">
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="TextColor" Value="SlateGray" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <StackLayout Margin="10" Spacing="15">
         <VerticalStackLayout>
             <Label Text="Cuenta"  />
@@ -13,26 +21,19 @@
 
 
         <VerticalStackLayout>
-            <Label Text="Correo electronico" />
-            <Entry  Text="{Binding AccountDetail.Email}" Placeholder="Correo electronico" />
+            <Label Text="Correo electronico"/>
+            <Entry  Text="{Binding AccountDetail.Email}" Placeholder="Correo electronico"/>
             <BoxView HeightRequest="0.8" Color="Gray" />
         </VerticalStackLayout>
 
 
         <VerticalStackLayout>
-            <Label Text="Contraseña" />
-            <Entry Text="{Binding AccountDetail.Password}" Placeholder="Contraseña" />
+            <Label Text="Contraseña"/>
+            <Entry Text="{Binding AccountDetail.Password}" Placeholder="Contraseña" IsPassword="True"/>
             <BoxView HeightRequest="0.8" Color="Gray" />
         </VerticalStackLayout>
 
 
-        <Button        Text="Guardar" 
-                       TextColor="White" 
-                       BackgroundColor="#150420" 
-                       FontSize="15" 
-                       HeightRequest="50" 
-                       CornerRadius="20"
-                       Margin="15,15,15,15"
-                       Command="{Binding AddUpdateAccountCommand}"/>
+        <Button Text="Guardar" Command="{Binding AddUpdateAccountCommand}"/>
     </StackLayout>
 </ContentPage>

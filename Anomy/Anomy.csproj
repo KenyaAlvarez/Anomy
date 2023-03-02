@@ -49,12 +49,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\add.svg" />
 	  <None Remove="Resources\Images\appstore.svg" />
 	  <None Remove="Resources\Images\bvva.svg" />
 	  <None Remove="Resources\Images\cancel.png" />
+	  <None Remove="Resources\Images\delete.png" />
 	  <None Remove="Resources\Images\discord.svg" />
 	  <None Remove="Resources\Images\dots.png" />
 	  <None Remove="Resources\Images\dropbox.svg" />
+	  <None Remove="Resources\Images\edit.png" />
 	  <None Remove="Resources\Images\facebook.svg" />
 	  <None Remove="Resources\Images\gbm.svg" />
 	  <None Remove="Resources\Images\github.svg" />
